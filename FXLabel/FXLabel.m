@@ -106,7 +106,7 @@
                 break;
             }
             NSString *line = nil;
-            for (int i = index; i < [characters count]; i++)
+            for (int i = (int)index; i < [characters count]; i++)
             {
                 NSString *character = characters[i];
                 NSString *newLine = line? [line stringByAppendingString:character]: character;
@@ -178,7 +178,7 @@
                 break;
             }
             NSString *line = nil;
-            for (int i = index; i < [words count]; i++)
+            for (int i = (int)index; i < [words count]; i++)
             {
                 NSString *word = words[i];
                 NSString *newLine = line? [line stringByAppendingFormat:@" %@", word]: word;
@@ -314,7 +314,7 @@
                 else
                 {
                     //remove enough characters to allow space for ellipsis
-                    for (i = [widths count] - 1; i >= 0; i--)
+                    for (i = (int)([widths count] - 1); i >= 0; i--)
                     {
                         x -= [widths[i] floatValue];
                         if (x + ellipsisWidth <= width) break;
