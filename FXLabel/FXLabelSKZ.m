@@ -31,7 +31,7 @@
 //
 
 
-#import "FXLabel.h"
+#import "FXLabelSKZ.h"
 
 
 #import <Availability.h>
@@ -560,7 +560,7 @@
 @end
 
 
-@interface FXLabel ()
+@interface FXLabelSKZ ()
 
 @property (nonatomic, assign) NSUInteger minSamples;
 @property (nonatomic, assign) NSUInteger maxSamples;
@@ -568,7 +568,7 @@
 @end
 
 
-@implementation FXLabel
+@implementation FXLabelSKZ
 
 @synthesize shadowBlur; //no leading _ to avoid conflict with private property
 

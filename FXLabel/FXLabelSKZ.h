@@ -1,5 +1,5 @@
 //
-//  FXLabel.h
+//  FXLabelSKZ.h
 //
 //  Version 1.5.2
 //
@@ -73,7 +73,7 @@
 @end
 
 
-@interface FXLabel : UILabel
+@interface FXLabelSKZ : UILabel
 
 @property (nonatomic) CGFloat shadowBlur;
 @property (nonatomic) CGFloat innerShadowBlur;
